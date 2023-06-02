@@ -1,0 +1,32 @@
+
+h1{margin-top: 0;}
+header{
+    margin-top: 0; 
+    color: white;
+    background-color: black;
+}
+
+table{
+    background-color: black;
+    
+}
+
+th{
+    background-color:aliceblue;
+}
+
+td{
+    background-color:white;
+}
+
+#imageblock{float: left;
+
+}
+
+body{
+    background-color: red;
+    
+}
+
+article{
+    background-color: gold;

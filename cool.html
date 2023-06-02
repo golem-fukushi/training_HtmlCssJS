@@ -1,0 +1,281 @@
+<html>
+<head>
+	<title>My Webpage</title>
+	<style>
+	/* ここに提供されたCSSコードを貼り付けます */
+        :root {
+	--bgcolor: rgb(2, 0, 36);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	background: var(--bgcolor);
+	color: white;
+}
+ul {
+	list-style: none;
+}
+h1 {
+	font-size: 5rem;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+	width: fit-content;
+	cursor: pointer;
+}
+h1:hover {
+	transform: skew(10deg);
+}
+h1::before {
+	content: attr(data-name);
+	position: absolute;
+	top: 0;
+	left: -20px;
+	background: var(--bgcolor);
+	height: 3rem;
+	overflow: hidden;
+	transition: all 300ms ease;
+	padding-left: 20px;
+}
+h1:hover::before {
+	top: -3px;
+	left: 0px;
+	color: hotpink;
+}
+
+h1::after {
+	content: "";
+	height: 4px;
+	width: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: hotpink;
+	transition: all 300ms ease;
+}
+h1:hover::after {
+	width: 120%;
+	outline: 5px solid rgb(2, 0, 36);
+}
+
+/* //////////////////////////// */
+
+/*  links sidebar CSS  */
+._social-links {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translatey(-50%);
+	padding: 1em 0.5em 1em 1em;
+	background: #fafafa;
+	border-radius: 0.5em 0 0 0.5em;
+	box-shadow: -4px 0px 0px hotpink;
+	transition: all 300ms ease;
+}
+
+._social-links:hover {
+	box-shadow: -8px 0px 20px hotpink;
+	padding: 1em;
+}
+
+._links-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+._social-link a {
+	color: #111;
+	font-size: 1.5rem;
+	transition: all 200ms ease;
+}
+._social-link a:visited {
+	color: #111;
+}
+._social-link a:hover {
+	color: hotpink;
+	font-size: 1.75rem;
+}
+
+/* //////////////////////////// */
+
+	</style>
+</head>
+<body>
+	<h1 data-name="My Webpage">My Webpage</h1>
+
+	<!-- ここにコンテンツを追加してください -->
+	<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .image-container img {
+  border: 20px ridge #ccc;
+  padding: 5px;
+}
+  img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  dd {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  small {
+    color: #ccc;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>新入社員自己紹介サイト</h1>
+</header>
+
+<article>
+ <div class="image-container">
+    <img src="%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89.jpg" alt="golem_image">
+  </div>
+  <table>
+    <tr>
+      <th>名前</th>
+      <td>福士 武尊</td>
+    </tr>
+    <tr>
+      <th>あだ名</th>
+      <td>たける、ふくたけ、ゴーレム</td>
+    </tr>
+    <tr>
+      <th>出身地</th>
+      <td><a href="saitama.html" target="_blank">埼玉県</a></td>
+    </tr>
+    <tr>
+      <th>趣味</th>
+      <td>ゲーム（<a href="https://www.nintendo.co.jp/switch/av5ja/index.html" target="_blank">スプラトゥーン</a>、<a href="https://www.nintendo.co.jp/switch/av5ja/index.html" target="_blank">ゼルダの伝説</a>）、ロックダンス、サッカー、ブルーインパルス、コーヒー</td>
+    </tr>
+    <tr>
+      <th>専門分野</th>
+      <td>統計学、</td>
+    </tr>
+    <tr>
+      <th>研究テーマ</th>
+      <td>滋賀県観光ネットワーク解析、レセプトデータ解析（長期入院の要因分析）<br>
+      西日本豪雨災害時の避難行動に関するアンケート解析 など</td>
+    </tr>
+    
+    <tr>
+      <th>アンケート</th>
+      <td>
+        ダンスに興味はありますか？
+        <form>
+          <dl>
+            <dt>&lt;お名前&gt;</dt>
+            <dd><input type="text" name="customer"></dd>
+            <dt>選択してください</dt>
+            <dd>
+              <input type="radio" name="interest" value="yes">興味あり！
+              <input type="radio" name="interest" value="no">興味なし・・・
+            </dd>
+          </dl>
+          <button type="submit" name="question" value="click_submit">送信</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+</article>
+
+	<div class="_social-links">
+		<ul class="_links-list">
+			<li class="_social-link"><a href="#">Link 1</a></li>
+			<li class="_social-link"><a href="#">Link 2</a></li>
+			<li class="_social-link"><a href="#">Link 3</a></li>
+		</ul>
+	</div>
+
+	<!-- ここにコンテンツを追加してください -->
+
+</body>
+</html>
+
+
